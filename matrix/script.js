@@ -1,7 +1,7 @@
-// Cria a matriz 9x9 e a exibe no DOM
+// Cria a matriz 9x9
 const createMatrix = () => {
   const matrixContainer = document.getElementById('matrix');
-  matrixContainer.innerHTML = ''; // Limpa a matriz existente
+  matrixContainer.innerHTML = ''; // Limpa a matriz
   for (let i = 0; i < 9; i++) {
     for (let j = 0; j < 9; j++) {
       const cell = document.createElement('div');
@@ -11,7 +11,7 @@ const createMatrix = () => {
   }
 };
 
-// Desenha a inicial do aluno na matriz
+// Desenha a inicial na matriz
 const drawInitial = (initial) => {
   const matrixCells = document.querySelectorAll('.cell');
   const initialPositions = {
